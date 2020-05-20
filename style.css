@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&display=swap');
+:root {
+    --main-bg-color: #f1e8e8;
+    --main-color: #010101;
+}
+
+*{ 
+    margin: 0;
+    padding: 0
+}
+
+body{
+   
+    background-color: var(--main-bg-color);
+    font-family: 'Bellota Text', cursive;
+    overflow: hidden;
+}
+.menu{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    display: block;
+    align-items: flex-end;
+}
+.headers{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    display: block;
+    align-items: flex-end;
+}
+.headers h1, .headers h2{
+    display: flex;
+    height: 50vh;
+  
+    letter-spacing: .15em; 
+    
+}
+.headers h2{
+    font-size: 30px;
+
+}
+.headers .typewriter h1{
+    align-items: flex-end;
+    font-size: 50px;
+    line-height: 70px;
+    top: 50vh;
+    height: 70px;
+    overflow: hidden;
+    border-right: .15em solid black; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em; 
+    animation: 
+      typing 2.5s steps(30, end),
+      blink-caret .25s  step-end 15;
+  
+    
+
+}
+.bell {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 6px solid var(--main-color);
+    font-size: 50px;
+    color: var(--main-color);
+    text-align: center;
+    line-height: 80px;
+    transition: .2s;
+    cursor: pointer;
+   }
+ 
+   .bell i {
+    animation: rotate .3s 60s linear infinite alternate;
+    transform-origin: 50% 0;
+    transition: .2s;
+   }
+ 
+   .bell:hover {
+    background-color: var(--main-color);
+   }
+ 
+   .bell:hover i {
+    color: white;
+    animation-duration: .15s;
+    /* animation-play-state: paused; */
+    /* animation: none; */
+   }
+ 
+   @keyframes rotate {
+    0% {
+     transform: rotate(30deg);
+    }
+ 
+    100% {
+     transform: rotate(-30deg);
+    }
+   }
+   .typewriter h1 {
+    
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+  }
