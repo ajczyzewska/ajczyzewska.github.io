@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 50px;
+            height: 50px;
+            background-color: black;
+            position: absolute; 
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #size:checked ~div{
+            width:100px;
+            height: 100px;
+        }
+
+        #rotate:checked ~div{
+            transform: translate(-50%, -50%) rotate(45deg);
+
+        }
+
+        #color:checked ~div{
+            background-color: red;
+
+        }
+        #glow:checked ~div{
+            box-shadow: 0 0 46px 12px red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <label for="size">2 x większy</label>
+	<input type="checkbox" id="size">
+
+	<label for="rotate">Obrót 45 deg</label>
+	<input type="checkbox" id="rotate">
+
+	<label for="color">Kolor</label>
+	<input type="checkbox" id="color">
+
+	<label for="glow">Światło</label>
+	<input type="checkbox" id="glow">
+	<div></div>
+
+
+</body>
+</html>
