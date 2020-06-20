@@ -3,9 +3,14 @@
     padding: 0;
 
 }
+body{
+    font-family: 'Roboto', 'HelveticaNeue-Light', 'Helvetica Neue Light', 
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 header{
     height: 100vh;
+    filter: contrast(0.3);
     background-image: url("http://websamuraj.pl/examples/yt/scrollHeader/bg.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -18,3 +23,34 @@ main {
     min-height: 150vh;
     background-color: #000;
    }
+
+.side-menu{
+    position: fixed;
+    width: 10%;
+    top: 20%;
+    left:0;
+    display: block;
+    z-index: 1;
+
+}
+.social-media{
+  
+    bottom: 0;
+    right:0;
+    text-align: right;
+    list-style: none;
+    padding-right: 10px;
+}
+a{
+    color:orange;
+}
+.social-media li {
+    font-size: 30px;
+    background-color: #fea5001f;
+}
+
+.menu{
+    opacity: 1;
+    position: fixed;
+    z-index: 1;
+}

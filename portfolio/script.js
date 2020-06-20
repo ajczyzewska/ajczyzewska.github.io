@@ -9,7 +9,7 @@ $doc.on('scroll', function(){
     if (scrollPos< sectionOffset){
             $header.css({
                 'opacity': 1- scrollPos/headerHeight,
-                'filter': `grayscale(${2 * scrollPos / headerHeight})`,
+                'filter': `grayscale(${2 * scrollPos / headerHeight}), contrast(0.3);`,
             })
     }
 
