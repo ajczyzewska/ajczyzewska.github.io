@@ -7,7 +7,7 @@ body {
     font-family: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 a{
-    color: orange;
+    color: #fd7726;
 }
 
 header {
@@ -24,6 +24,7 @@ header {
     position: relative;
     display: block;
     top: 50%;
+    transform: translateY(-80%);
     color: black;
     filter: contrast(1);
     z-index: 10;
@@ -31,7 +32,7 @@ header {
 
 h1 {
     font-size: 60px;
-    color: orange;
+    color: #fd7726;
     animation: h1 1s;
 }
 
@@ -46,7 +47,7 @@ h1 {
 
 h2 {
     font-size: 30px;
-    color: orange;
+    color: #fd7726;
     animation: h2 1s;
     transform: scale(1, 1) translateY(0);
     position: relative;
@@ -89,7 +90,7 @@ ul.social-media.menu.hide{
 }
 
 .social-media a {
-    color: orange;
+    color: #fd7726;
 }
 
 .social-media li {
@@ -110,7 +111,7 @@ ul.social-media.menu.hide{
     left: 0;
     text-transform: uppercase;
     transform: rotate(-90deg);
-    color: orange;
+    color: #fd7726;
     padding-top: 0px;
     font-size: 20px;
     animation: contact-show 2s linear;
@@ -131,7 +132,7 @@ ul.social-media.menu.hide{
     right: 0;
     text-transform: uppercase;
     transform: rotate(90deg);
-    color: orange;
+    color: #fd7726;
     padding-top: 0px;
     font-size: 20px;
     animation: portfolio-show 2s linear;
@@ -152,7 +153,7 @@ ul.social-media.menu.hide{
     width: 0.5px;
     height: 500px;
     transform: rotateX(-180deg);
-    background: linear-gradient(0deg, #fda505, #ffffff00);
+    background: linear-gradient(0deg, #fd7726, #ffffff00);
     margin: auto;
     margin-left: 2%;
     animation: show-line 1s 2s linear forwards;
@@ -171,7 +172,7 @@ ul.social-media.menu.hide{
     height: 100vh;
     width: 100vw;
     padding-top: 40%;
-    color: orange;
+    color: #fd7726;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -183,19 +184,19 @@ ul.social-media.menu.hide{
     width: 50px;
     height: 50px;
     top: 80%;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid #fd7726;
 }
 
 .scroll-left {
-    border-right: 2px solid orange;
+    border-right: 2px solid #fd7726;
     transform: rotate(-45deg);
     margin: auto;
     animation: scroll-down-left 2s ease-in forwards, pulse-left 5s 2s ease-in infinite forwards;
 }
 
 .scroll-right {
-    border-left: 2px solid orange;
-    border-bottom: 2px solid orange;
+    border-left: 2px solid #fd7726;
+    border-bottom: 2px solid #fd7726;
     transform: rotate(45deg);
     margin: auto;
     animation: scroll-down-right 2s ease-in forwards, pulse-right 5s 2s ease-in infinite forwards;
@@ -294,6 +295,10 @@ ul.social-media.menu.hide{
  
 }
 
+.about{
+    padding-top: 50px;
+    text-align: center;
+}
 .gallery{
     display: flex;
 }
@@ -333,7 +338,7 @@ ul.social-media.menu.hide{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    color: orange;
+    color: #fd7726;
     text-align: center;
     padding-top:15px;
   }
@@ -342,6 +347,67 @@ ul.social-media.menu.hide{
       font-weight: 200;
       font-size: 40px;
   }
+
+.skills-wrapper{
+    width:80%;
+    margin-left: auto;
+    margin-right: auto;
+    list-style: none;
+}
+
+.progress-bar {
+	margin: 50px auto;
+	width: 500px;
+	height: 400px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-flow: column wrap;
+	flex-flow: column wrap;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+.progress-bar h1 {
+	text-align: center;
+}
+
+.skills {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.bar {
+	width: 400px;
+	background: #ddd;
+	margin-left: 20px;
+	height: 20px;
+	border-radius: 10px;
+
+}
+
+.skill-title {
+	width: 59px;
+	font-weight: bold;
+}
+
+.bar-color {
+	width: 0%;
+	background: #ddd;
+	height: 100%;
+	border-radius: 10px;
+	-webkit-transition: all 0.7s linear;
+	transition: all 0.7s linear;
+	-webkit-transition-delay: 0.5s;
+	transition-delay: 0.5s;
+
+}
+
+
+
 .footer{
     width: 100%;
     height: 50vh;
@@ -351,7 +417,7 @@ ul.social-media.menu.hide{
     text-align: center;
     background-color: black;
     list-style: none;
-    color: orange;
+    color: #fd7726;
 }
 .footer h2{
     margin-bottom: 30px;
