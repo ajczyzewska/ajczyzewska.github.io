@@ -287,10 +287,13 @@ ul.social-media.menu.hide{
 
 .portfolio-section {
     max-width: 90rem;
-    margin: 0 auto;
-    padding: 0 2rem 2rem;
+    margin-left: auto;
+    margin-right: auto;
+   padding-top: 50px;
+
  
 }
+
 .gallery{
     display: flex;
 }
