@@ -31,13 +31,32 @@ $doc.on("scroll", function () {
 const arrow = document.querySelector(".container");
 const porttfolio = document.querySelector("div.portfolio-section");
 arrow.addEventListener("click", (e)=>{
-    console.log("click")
     porttfolio.scrollIntoView({
     behavior: "smooth",
     block: "start",
     inline: "nearest",
   });
 });
+
+// SCROLL ON MENU CLICK
+const $portfolio_btn = $(".portfolio.menu");
+$portfolio_btn.on('click', function() {
+  porttfolio.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
+})
+
+const contact = document.querySelector(".footer");
+const $contact_btn = $(".contact.menu");
+$contact_btn.on('click', function() {
+  contact.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
+})
 
 
 // SKILLS BAR
