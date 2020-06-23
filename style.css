@@ -305,6 +305,7 @@ ul.social-media.menu.hide {
 
 .gallery {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery-item {
@@ -593,6 +594,10 @@ ul.social-media.menu.hide {
 }
 
 .line {
-    visibility: hidden;
+    margin-left: 8%;
+}
+.portfolio-section{
+    padding-right: 20%;
+    padding-left: 20%;
 }
 }
