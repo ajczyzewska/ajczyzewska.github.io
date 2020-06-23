@@ -99,3 +99,13 @@ jQuery(document).ready(function() {
     "width": "80%"
   });
 });
+
+// MOBILE MENU ANIMATION
+const burger= document.querySelector('div.burger.mobile');
+const menu = document.querySelector('div.menu.mobile');
+const header = document.querySelector('header');
+burger.addEventListener('click', function(){
+   menu.classList.toggle('menu-show');
+   burger.classList.toggle('menu-show');
+   header.classList.toggle('menu-show');
+});
