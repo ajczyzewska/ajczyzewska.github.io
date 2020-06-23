@@ -16,6 +16,7 @@ header {
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .intro {
@@ -461,3 +462,29 @@ ul.social-media.menu.hide{
   .footer p{
       padding-bottom: 30px;
   }
+
+  @media (max-width: 768px){
+      body{
+          width: 100vw;
+      }
+    h2{
+    font-size: 10px;
+}
+h1 {
+    font-size: 15px;
+}
+.intro{
+    width: 100vw;
+}
+.container{
+    padding-top: 90%;
+}
+main{
+    width:100vw;
+}
+.progress-bar {
+    width: 80vw;}
+    .bar{
+        width: 60vw;}
+    }
+}
