@@ -601,3 +601,29 @@ ul.social-media.menu.hide {
     padding-left: 20%;
 }
 }
+
+div.tags{ 
+    background-color: lightgray;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+ 
+
+}
+.tags-list{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-grow: 0.5;
+    flex-shrink: 1;
+    flex-basis: 50%;
+}
+div.tags span{
+    border-radius: 50%;
+    border-color:#fd7726;
+    background-color: #fd7726;
+    box-sizing: border-box;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
