@@ -1,0 +1,79 @@
+/* Header Animation */
+header {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+* {
+  box-sizing: border-box
+}
+
+/* Slideshow container */
+.slideshow-container {
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.headerText p {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  animation: text-h 30s infinite;
+  font-size: xx-large;
+
+}
+
+.headerText p:nth-of-type(2) {
+  animation-delay: 10s;
+}
+
+.headerText p:nth-of-type(3) {
+  animation-delay: 20s;
+}
+
+@keyframes text-h {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 0;
+  }
+
+  8% {
+    opacity: 1;
+  }
+
+  22% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
