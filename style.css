@@ -66,6 +66,49 @@ h2 {
     }
 }
 
+.typing-container {
+    margin-top: 30px;
+    min-height: 80px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    animation: fadeIn 1s 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.typing-text {
+    font-size: 16px;
+    color: #666;
+    max-width: 700px;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0;
+    padding: 0 20px;
+}
+
+.cursor {
+    font-size: 16px;
+    color: #fd7726;
+    animation: blink 0.7s infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
 a {
     text-decoration: none;
 }
@@ -293,9 +336,10 @@ ul.social-media.menu.hide {
 
 .portfolio-section {
     max-width: 90rem;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 80px;
+    margin-right: 80px;
     padding-top: 50px;
+    padding-bottom: 10px;
 }
 
 .about {
@@ -311,12 +355,13 @@ ul.social-media.menu.hide {
 .gallery-item {
     flex-grow: 1;
     width: 25%;
-    height: 200px;
+    min-height: 350px;
     margin: 1rem;
     box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    background-color: #1a1a1a;
 }
 
 .gallery-image {
@@ -346,6 +391,16 @@ ul.social-media.menu.hide {
     color: #fd7726;
     text-align: center;
     padding-top: 15px;
+    font-weight: 600;
+}
+
+.item-description {
+    color: #ccc;
+    font-size: 14px;
+    padding: 10px 15px;
+    line-height: 1.5;
+    text-align: center;
+    margin: 0;
 }
 
 .heading {
